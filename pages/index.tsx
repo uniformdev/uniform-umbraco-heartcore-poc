@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
          {
            headline: child.heroTitle,
            heroSubtitle: child.heroSubtitle,
-           intentTag: translateIntentTag(child),
+           intentTag: translateIntentTag(child.personalization),
          }
       )
     )

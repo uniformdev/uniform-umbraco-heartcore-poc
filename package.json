@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && next export",
+    "start": "next dev",
     "generate:intents": "uniform optimize manifest download --output ./lib/intentManifest.json --apiKey $YOUR_API_KEY"
   },
   "dependencies": {

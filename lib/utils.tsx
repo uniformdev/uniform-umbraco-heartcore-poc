@@ -1,18 +1,25 @@
 import { IntentTags } from '@uniformdev/optimize-common';
+import { HeroFields } from '../components/hero';
+interface intentJson
+{
+  contentTypeAlias: string,
+  unfrmOptIntentTag: string, 
+  unfrmOptIntentTagStrenght: string
+}
 
 export function translateIntentTag(intenttag){
     var returnvalx
-    //var returnvaly
+    var intentdata = intenttag[0] as intentJson
     
-  if(intenttag.unfrmOptIntentTag){
+    
+  if(intentdata.unfrmOptIntentTag){
     returnvalx=
     {
           intents: {
-            [intenttag.unfrmOptIntentTag]: {
-              str: intenttag.unfrmOptIntentTagStrenght
+            [intentdata.unfrmOptIntentTag]: {
+              str: intentdata.unfrmOptIntentTagStrenght
             }
           },
-
   }
 }
   else
