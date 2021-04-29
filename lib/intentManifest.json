@@ -28,28 +28,6 @@
         "id": "cfp_utm",
         "signals": [
           {
-            "type": "PVI",
-            "freq": "visit",
-            "scope": "visit",
-            "str": -50,
-            "path": {
-              "cs": false,
-              "expr": "/NOTFORCFP",
-              "type": "exact"
-            }
-          },
-          {
-            "type": "LP",
-            "freq": "visit",
-            "scope": "visit",
-            "str": 50,
-            "path": {
-              "cs": false,
-              "expr": "/CFPLP",
-              "type": "exact"
-            }
-          },
-          {
             "type": "QS",
             "freq": "visit",
             "scope": "visitor",
@@ -84,6 +62,9 @@
     "enrichments": [
       {
         "name": "Country"
+      },
+      {
+        "name": "Major"
       }
     ]
   }
