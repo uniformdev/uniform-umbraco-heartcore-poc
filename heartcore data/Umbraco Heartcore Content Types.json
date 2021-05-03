@@ -1,0 +1,341 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://api.umbraco.io/content/type"
+        },
+        "contenttypes": [
+            {
+                "href": "https://api.umbraco.io/content/type/heroComposition"
+            },
+            {
+                "href": "https://api.umbraco.io/content/type/textpage"
+            },
+            {
+                "href": "https://api.umbraco.io/content/type/frontpage"
+            },
+            {
+                "href": "https://api.umbraco.io/content/type/hero"
+            },
+            {
+                "href": "https://api.umbraco.io/content/type/personalizedHero"
+            },
+            {
+                "href": "https://api.umbraco.io/content/type/uniformData"
+            }
+        ]
+    },
+    "_embedded": {
+        "contenttypes": [
+            {
+                "allowCultureVariant": false,
+                "alias": "heroComposition",
+                "compositions": [],
+                "groups": [
+                    {
+                        "name": "Hero",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroImage",
+                                "label": "image",
+                                "propertyEditorAlias": "Umbraco.MediaPicker",
+                                "sortOrder": 0,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroTitle",
+                                "label": "Title",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 1,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroSubtitle",
+                                "label": "Subtitle",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 2,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "name": "Hero Composition",
+                "_createDate": "2021-04-27T10:59:57.237Z",
+                "_id": "05798c3a-ba07-440b-9067-6d7c4b627646",
+                "_updateDate": "2021-04-27T10:59:57.237Z",
+                "_links": {
+                    "self": {
+                        "href": "https://api.umbraco.io/content/type/heroComposition"
+                    },
+                    "root": {
+                        "href": "https://api.umbraco.io/content/type"
+                    }
+                }
+            },
+            {
+                "allowCultureVariant": false,
+                "alias": "textpage",
+                "compositions": [
+                    "heroComposition"
+                ],
+                "groups": [
+                    {
+                        "name": "Hero",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroImage",
+                                "label": "image",
+                                "propertyEditorAlias": "Umbraco.MediaPicker",
+                                "sortOrder": 0,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroTitle",
+                                "label": "Title",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 1,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroSubtitle",
+                                "label": "Subtitle",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 2,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hero",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "personalization",
+                                "label": "Uniform Personalization",
+                                "propertyEditorAlias": "Umbraco.NestedContent",
+                                "sortOrder": 3,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "name": "Textpage",
+                "_createDate": "2021-04-27T11:06:54.38Z",
+                "_id": "a7e4919c-4a6e-4ba4-bf14-3f9966009e77",
+                "_updateDate": "2021-04-27T11:06:54.38Z",
+                "_links": {
+                    "self": {
+                        "href": "https://api.umbraco.io/content/type/textpage"
+                    },
+                    "root": {
+                        "href": "https://api.umbraco.io/content/type"
+                    }
+                }
+            },
+            {
+                "allowCultureVariant": false,
+                "alias": "frontpage",
+                "compositions": [
+                    "personalizedHero"
+                ],
+                "groups": [
+                    {
+                        "name": "Heros",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroVariants",
+                                "label": "Hero Variants",
+                                "propertyEditorAlias": "Umbraco.NestedContent",
+                                "sortOrder": 0,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "name": "Frontpage",
+                "_createDate": "2021-04-27T11:08:55.027Z",
+                "_id": "9456f06b-f6bd-449d-8703-4d3a64350ed3",
+                "_updateDate": "2021-04-27T11:08:55.027Z",
+                "_links": {
+                    "self": {
+                        "href": "https://api.umbraco.io/content/type/frontpage"
+                    },
+                    "root": {
+                        "href": "https://api.umbraco.io/content/type"
+                    }
+                }
+            },
+            {
+                "allowCultureVariant": false,
+                "alias": "hero",
+                "compositions": [],
+                "groups": [
+                    {
+                        "name": "Content",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroTitle",
+                                "label": "Title",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 0,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroSubtitle",
+                                "label": "Subtitle",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 1,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroImage",
+                                "label": "Image",
+                                "propertyEditorAlias": "Umbraco.MediaPicker",
+                                "sortOrder": 2,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "personalization",
+                                "label": "Uniform Personalization",
+                                "propertyEditorAlias": "Umbraco.NestedContent",
+                                "sortOrder": 5,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "name": "Hero",
+                "_createDate": "2021-04-27T13:01:08.613Z",
+                "_id": "7af0ac35-e60b-4748-99fb-48ca845c5ab2",
+                "_updateDate": "2021-04-27T13:01:08.613Z",
+                "_links": {
+                    "self": {
+                        "href": "https://api.umbraco.io/content/type/hero"
+                    },
+                    "root": {
+                        "href": "https://api.umbraco.io/content/type"
+                    }
+                }
+            },
+            {
+                "allowCultureVariant": false,
+                "alias": "personalizedHero",
+                "compositions": [],
+                "groups": [
+                    {
+                        "name": "Heros",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "heroVariants",
+                                "label": "Hero Variants",
+                                "propertyEditorAlias": "Umbraco.NestedContent",
+                                "sortOrder": 0,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "name": "Personalized Hero",
+                "_createDate": "2021-04-27T13:04:07.907Z",
+                "_id": "d34ffe89-49cd-4916-a24c-70769ccc0853",
+                "_updateDate": "2021-04-27T13:04:07.907Z",
+                "_links": {
+                    "self": {
+                        "href": "https://api.umbraco.io/content/type/personalizedHero"
+                    },
+                    "root": {
+                        "href": "https://api.umbraco.io/content/type"
+                    }
+                }
+            },
+            {
+                "allowCultureVariant": false,
+                "alias": "uniformData",
+                "compositions": [],
+                "groups": [
+                    {
+                        "name": "Personalization",
+                        "sortOrder": 0,
+                        "properties": [
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "unfrmOptIntentTag",
+                                "label": "unfrmOptIntentTag",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 0,
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "allowCultureVariant": false,
+                                "alias": "unfrmOptIntentTagStrenght",
+                                "label": "unfrmOptIntentTagStrenght",
+                                "propertyEditorAlias": "Umbraco.TextBox",
+                                "sortOrder": 1,
+                                "validation": {
+                                    "required": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "name": "Uniform Data",
+                "_createDate": "2021-04-29T14:48:15.213Z",
+                "_id": "30718a7e-b269-4f9e-9475-acd70c7478f6",
+                "_updateDate": "2021-04-29T14:48:15.213Z",
+                "_links": {
+                    "self": {
+                        "href": "https://api.umbraco.io/content/type/uniformData"
+                    },
+                    "root": {
+                        "href": "https://api.umbraco.io/content/type"
+                    }
+                }
+            }
+        ]
+    }
+}
