@@ -7,6 +7,6 @@ export const PersonalizedHeroLoading = () => {
 
 export const PersonalizedHero = ( {item}: {item: HeroFields[]} ) => {
   return (
-    <Personalize variations={item} component={Hero} matchFilter='personalizedOrDefault'/>
+    <Personalize variations={item} component={Hero}/>
   )
 }
