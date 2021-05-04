@@ -1,0 +1,89 @@
+{
+    "_creatorName": "Christian Bennich",
+    "_url": "/home/",
+    "_writerName": "Christian Bennich",
+    "_hasChildren": true,
+    "_level": 1,
+    "_createDate": "2021-04-27T11:13:41.983Z",
+    "_id": "d9a1929d-8fbd-4195-9724-226ad23203b8",
+    "_updateDate": "2021-04-29T18:20:37.677Z",
+    "_links": {
+        "self": {
+            "href": "https://cdn.umbraco.io/content/d9a1929d-8fbd-4195-9724-226ad23203b8"
+        },
+        "root": {
+            "href": "https://cdn.umbraco.io/content{?contentType}",
+            "templated": true
+        },
+        "children": {
+            "href": "https://cdn.umbraco.io/content/d9a1929d-8fbd-4195-9724-226ad23203b8/children"
+        },
+        "ancestors": {
+            "href": "https://cdn.umbraco.io/content/d9a1929d-8fbd-4195-9724-226ad23203b8/ancestors"
+        },
+        "descendants": {
+            "href": "https://cdn.umbraco.io/content/d9a1929d-8fbd-4195-9724-226ad23203b8/descendants"
+        },
+        "parent": {
+            "href": "https://cdn.umbraco.io/content{?contentType}",
+            "templated": true
+        }
+    },
+    "contentTypeAlias": "frontpage",
+    "name": "Home",
+    "sortOrder": 0,
+    "heroVariants": [
+        {
+            "contentTypeAlias": "hero",
+            "heroTitle": "Marketer headline",
+            "heroSubtitle": "You seeing this because you have triggered the Markter intent",
+            "heroImage": null,
+            "personalization": [
+                {
+                    "contentTypeAlias": "uniformData",
+                    "unfrmOptIntentTag": "marketer",
+                    "unfrmOptIntentTagStrenght": "0"
+                }
+            ]
+        },
+        {
+            "contentTypeAlias": "hero",
+            "heroTitle": "Developer Headline",
+            "heroSubtitle": "You seeing this because you have triggered the Developer intent",
+            "heroImage": null,
+            "personalization": [
+                {
+                    "contentTypeAlias": "uniformData",
+                    "unfrmOptIntentTag": "dev",
+                    "unfrmOptIntentTagStrenght": "0"
+                }
+            ]
+        },
+        {
+            "contentTypeAlias": "hero",
+            "heroTitle": "Call for papers",
+            "heroSubtitle": "You seeing this because you have triggered the Call for Papers campaign intent",
+            "heroImage": null,
+            "personalization": [
+                {
+                    "contentTypeAlias": "uniformData",
+                    "unfrmOptIntentTag": "cfp_utm",
+                    "unfrmOptIntentTagStrenght": "0"
+                }
+            ]
+        },
+        {
+            "contentTypeAlias": "hero",
+            "heroTitle": "Default headline",
+            "heroSubtitle": "Get started with Uniform personalization!",
+            "heroImage": null,
+            "personalization": [
+                {
+                    "contentTypeAlias": "uniformData",
+                    "unfrmOptIntentTag": "",
+                    "unfrmOptIntentTagStrenght": ""
+                }
+            ]
+        }
+    ]
+}

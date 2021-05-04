@@ -6,8 +6,6 @@ import MyClient from "../lib/HearthCoreClient"
 import { mapIntentJsonToIntentTag } from "../lib/utils";
 
 export default function marketer(props){
-    useBehaviorTracking(props.intentTag);
-
     return (
         <Hero {...props} />
     )
