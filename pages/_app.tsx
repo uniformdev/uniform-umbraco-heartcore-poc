@@ -1,10 +1,12 @@
 import { UniformTracker } from '@uniformdev/optimize-tracker-react';
 import localTracker from '../lib/localtracker';
 import { AppProps } from 'next/dist/next-server/lib/router/router';
+import * as dotenv from 'dotenv'
 
 export type UniHeartApp = AppProps
 
 function UniHeartApp({Component, pageProps}: UniHeartApp) {
+  dotenv.config();
   
   return (
      <UniformTracker 
