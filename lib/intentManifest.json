@@ -59,13 +59,6 @@
         ]
       }
     ],
-    "enrichments": [
-      {
-        "name": "Country"
-      },
-      {
-        "name": "Major"
-      }
-    ]
+    "enrichments": []
   }
 }

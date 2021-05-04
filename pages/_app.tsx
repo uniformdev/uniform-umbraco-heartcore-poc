@@ -1,12 +1,8 @@
 import { UniformTracker } from '@uniformdev/optimize-tracker-react';
 import localTracker from '../lib/localtracker';
 import { AppProps } from 'next/dist/next-server/lib/router/router';
-import { IntentVector } from '@uniformdev/optimize-common';
 
-
-export type UniHeartApp = AppProps & {
-  scoring?: IntentVector;
-};
+export type UniHeartApp = AppProps
 
 function UniHeartApp({Component, pageProps}: UniHeartApp) {
   
@@ -126,7 +122,6 @@ function UniHeartApp({Component, pageProps}: UniHeartApp) {
           }
         }
       `}</style>
-
       <style>{`
         html,
         body {
@@ -145,5 +140,3 @@ function UniHeartApp({Component, pageProps}: UniHeartApp) {
 }
 
 export default UniHeartApp
-
-

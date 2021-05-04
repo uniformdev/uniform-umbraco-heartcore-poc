@@ -1,5 +1,5 @@
 import { IntentTags } from '@uniformdev/optimize-common';
-import { HeroFields } from '../components/hero';
+
 interface intentJson
 {
   contentTypeAlias: string,
@@ -7,28 +7,17 @@ interface intentJson
   unfrmOptIntentTagStrenght: string
 }
 
-export function translateIntentTag(intenttag){
-    var returnvalx
-    var intentdata = intenttag[0] as intentJson
-    
+export function mapIntentJsonToIntentTag(intenttag){
+    const intentTag = {} as IntentTags
+    const intentdata = intenttag[0] as intentJson //Assume for this PoC that there is always data in the first array item
     
   if(intentdata.unfrmOptIntentTag){
-    returnvalx=
-    {
-          intents: {
-            [intentdata.unfrmOptIntentTag]: {
-              str: intentdata.unfrmOptIntentTagStrenght
-            }
-          },
-  }
-}
-  else
-    {
-      returnvalx=
-      {
-  
+    intentTag.intents = {
+      [intentdata.unfrmOptIntentTag]: {
+        str: intentdata.unfrmOptIntentTagStrenght
       }
     }
-
-    return returnvalx as IntentTags
   }
+  
+  return intentTag as IntentTags
+}
